@@ -4,15 +4,14 @@
 
 <head>
 
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Dmitriy Selivanov" />
 
 
-<title>text2vec</title>
+<title>Big Data Indicators</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -158,7 +157,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">text2vec</a>
+      <a class="navbar-brand" href="index.html">bigdata-indicators</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -194,7 +193,7 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="http://text2vec.org/">English</a>
+      <a href="http://bigdata-indicators.com/">English</a>
     </li>
     <li>
       <a href="https://cndocr.github.io/text2vec-doc-cn/">Chinese</a>
@@ -222,30 +221,23 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">text2vec</h1>
-<h4 class="author"><em>Dmitriy Selivanov</em></h4>
+<h1 class="title toc-ignore">Big Data Indicators</h1>
 
 </div>
 
 
-<p>You’ve just discovered <strong><a href="https://github.com/dselivanov/text2vec">text2vec</a></strong>!</p>
-<p><strong>text2vec</strong> is an R package which provides an efficient framework with a concise API for text analysis and natural language processing (NLP).</p>
-<p>Goals which we aimed to achieve as a result of development of <code>text2vec</code>:</p>
+<p>Презентация результатов проекта по оценке <strong>высокочастотных индикаторов экономических ожиданий населения</strong> на основе больших данных.</p>
+<p>Основой для расчета индикаторов являются комментарии Интернет-пользователей к статьям в крупнейших экономических СМИ по заданным темам.<br />
+Методологическая база представлена в журнале “Вопросы экономики”, №6, 2017 - <a href="http://www.vopreco.ru/rus/year.files/n6_2017.html#an5">Голощапова, Андреев (2017). Оценка инфляционных ожиданий российского населения методами машинного обучения.</a></p>
+<p>Ключевые преимущества подхода к оценке экономических ожиданий на основе больших данных относительно подхода, основанного на опросах домохозяйств:</p>
 <ul>
-<li><strong>Concise</strong> - expose as few functions as possible</li>
-<li><strong>Consistent</strong> - expose unified interfaces, no need to explore new interface for each task</li>
-<li><strong>Flexible</strong> - allow to easily solve complex tasks</li>
-<li><strong>Fast</strong> - maximize efficiency per single thread, transparently scale to multiple threads on multicore machines</li>
-<li><strong>Memory efficient</strong> - use streams and iterators, not keep data in RAM if possible</li>
+<li><strong>Точность</strong>. Учет интенсивности ожиданий населения, непосредственно относящихся к заданной теме</li>
+<li><strong>Охват</strong>. В настоящий момент индикаторы учитывают мнение более 36 000 уникальных пользователей Интернета с возможностью значительного дальнейшего увели-чения</li>
+<li><strong>Своевременность</strong>. Возможность обновления индикаторов в реальном времени. Все индикаторы рассчитываются на ежедневной основе с возможностью дальнейшей дезагрегации. Обновление результатов расчета индикаторов на сайте происходит каждый месяц.</li>
+<li><strong>Опережение</strong>. Опережение индикаторов, строящихся на основе опросов населения примерно на 1 месяц (за счет временного лага, требуемого на сбор и обработку данных личных интервью).</li>
+<li><strong>Сопоставимость</strong>. Возможность обеспечить сопоставимость расчетов во времени. При изменении методики расчета все результаты могут быть скорректированы.</li>
+<li><strong>Низкие издержки</strong>. Стоимость построения системы сбора, обработки и хранения информации для расчета индикаторов несопоставимо ниже затрат на проведение опросов.</li>
 </ul>
-<p>See <a href="api.html">API</a> section for details.</p>
-<div id="performance" class="section level1">
-<h1>Performance</h1>
-<p><img src="images/htop.png" alt="htop" /> <em>Author of the package is a little bit obsessed about efficiency.</em></p>
-<p>This package is efficient because it is carefully written in C++, which also means that text2vec is memory friendly. Some parts (such as GloVe) are fully parallelized using the excellent <a href="http://rcppcore.github.io/RcppParallel/">RcppParallel</a> package. This means that the word embeddings are computed in parallel on OS X, Linux, Windows, and even Solaris (x86) without any additional tuning or tricks.</p>
-<p>Other emrassingly parallel tasks (such as vectorization) can use any parallel backend which supports <a href="https://cran.r-project.org/package=foreach">foreach</a> package. They can achieve near-linear scalability with number of available cores.</p>
-<p>Finally, a streaming API means that users do not have to load all the data into RAM.</p>
-</div>
 
 
 
@@ -291,7 +283,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

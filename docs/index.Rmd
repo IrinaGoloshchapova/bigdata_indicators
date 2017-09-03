@@ -1,33 +1,22 @@
 ---
-title: "text2vec"
-author: "Dmitriy Selivanov"
+title: "Big Data Indicators"
 output:
   html_document:
     toc: false
     toc_float: false
 ---
-You've just discovered **[text2vec](https://github.com/dselivanov/text2vec)**!
+Презентация результатов проекта по оценке **высокочастотных индикаторов экономических ожиданий населения** на основе больших данных.  
 
-**text2vec** is an R package which provides an efficient framework with a concise API for text analysis and natural language processing (NLP). 
+Основой для расчета индикаторов являются комментарии Интернет-пользователей к статьям в крупнейших экономических СМИ по заданным темам.   
+Методологическая база представлена в журнале "Вопросы экономики", №6, 2017 - [Голощапова, Андреев (2017). Оценка инфляционных ожиданий российского населения методами машинного обучения.](http://www.vopreco.ru/rus/year.files/n6_2017.html#an5)  
 
-Goals which we aimed to achieve as a result of development of `text2vec`:
+ 
 
-* **Concise** - expose as few functions as possible
-* **Consistent** - expose unified interfaces, no need to explore new interface for each task
-* **Flexible** - allow to easily solve complex tasks
-* **Fast** - maximize efficiency per single thread, transparently scale to multiple threads on multicore machines
-* **Memory efficient** - use streams and iterators, not keep data in RAM if possible
+Ключевые преимущества подхода к оценке экономических ожиданий на основе больших данных относительно подхода, основанного на опросах домохозяйств:  
 
-See [API](api.html) section for details.
-
-# Performance
-
-![htop](images/htop.png)
-*Author of the package is a little bit obsessed about efficiency.*
-
-This package is efficient because it is carefully written in C++, which also means that text2vec is memory friendly. Some parts (such as GloVe) are fully parallelized using the excellent [RcppParallel](http://rcppcore.github.io/RcppParallel/) package. This means that the word embeddings are computed in parallel on OS X, Linux, Windows, and even Solaris (x86) without any additional tuning or tricks.
-
-Other emrassingly parallel tasks (such as vectorization) can use any parallel backend which supports [foreach](https://cran.r-project.org/package=foreach) package. They can achieve near-linear scalability with number of available cores. 
-
-Finally, a streaming API means that  users do not have to load all the data into RAM. 
-
+- **Точность**. Учет интенсивности ожиданий населения, непосредственно относящихся к заданной теме
+- **Охват**. В настоящий момент индикаторы учитывают мнение более 36 000 уникальных пользователей Интернета с возможностью значительного дальнейшего увели-чения
+- **Своевременность**. Возможность обновления индикаторов в реальном времени. Все индикаторы рассчитываются на ежедневной основе с возможностью дальнейшей дезагрегации. Обновление результатов расчета индикаторов на сайте происходит каждый месяц. 
+- **Опережение**. Опережение индикаторов, строящихся на основе опросов населения примерно на 1 месяц (за счет временного лага, требуемого на сбор и обработку данных личных интервью). 
+- **Сопоставимость**. Возможность обеспечить сопоставимость расчетов во времени. При изменении методики расчета все результаты могут быть скорректированы.
+- **Низкие издержки**. Стоимость построения системы сбора, обработки и хранения информации для расчета индикаторов несопоставимо ниже затрат на проведение опросов.
