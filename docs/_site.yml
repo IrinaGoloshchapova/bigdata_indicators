@@ -1,7 +1,7 @@
-name: "text2vec"
+name: "bigdata-indicators"
 output_dir: "."
 navbar:
-  title: "text2vec"
+  title: "bigdata-indicators"
   left:
     - text: "Home"
       href: index.html
@@ -21,7 +21,7 @@ navbar:
     - icon: fa-language
       menu:
         - text: "English"
-          href: http://text2vec.org/
+          href: http://bigdata-indicators.com/
         - text: "Chinese"
           href: https://cndocr.github.io/text2vec-doc-cn/
     - icon: fa-github
