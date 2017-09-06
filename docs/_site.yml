@@ -35,7 +35,7 @@ output:
     toc_depth: 3
     toc_float:
       collapsed: false
-    theme: cosmo
+    theme: sandstone
     highlight: haddock
     include:
       after_body: footer.html
