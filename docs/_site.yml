@@ -1,7 +1,7 @@
 name: "bigdata-indicators"
 output_dir: "."
 navbar:
-  title: "bigdata-indicators"
+  title: "Big Data Indicators"
   left:
     - text: "Home"
       href: index.html
