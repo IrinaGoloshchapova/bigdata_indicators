@@ -7,27 +7,15 @@ navbar:
       href: index.html
     - text: "Indicators"
       href: indicators.html
-    - text: "GloVe"
-      href: glove.html
-    - text: "Collocations"
-      href: collocations.html
-    - text: "Topic modeling"
-      href: topic_modeling.html
-    - text: "Similarity"
-      href: similarity.html
-    - text: "API"
-      href: api.html
   right:
     - icon: fa-language
       menu:
+        - text: "Russian"
+          href: http://bigdata-indicators.com/
         - text: "English"
           href: http://bigdata-indicators.com/
-        - text: "Chinese"
-          href: https://cndocr.github.io/text2vec-doc-cn/
     - icon: fa-github
-      href: https://github.com/dselivanov/text2vec
-    - icon: fa-stack-overflow
-      href: http://stackoverflow.com/questions/tagged/text2vec
+      href: https://github.com/IrinaGoloshchapova/bigdata_indicators/
 
 output:
   html_document:
