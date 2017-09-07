@@ -5,8 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Vectorization"
-      href: vectorization.html
+    - text: "Indicators"
+      href: indicators.html
     - text: "GloVe"
       href: glove.html
     - text: "Collocations"
