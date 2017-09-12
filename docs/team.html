@@ -209,10 +209,22 @@ $(document).ready(function () {
 
 
 <style>
+.column-left-inside{
+  float: left;
+  width: 35%;
+  text-align:left;
+}
+
+.column-right-inside{
+  float: right;
+  width: 65%;
+  text-align: left;
+}
+
 .column-left{
   float: left;
   width: 50%;
-  text-align: left;
+  text-align:left;
 }
 
 .column-right{
@@ -220,25 +232,21 @@ $(document).ready(function () {
   width: 50%;
   text-align: left;
 }
-
-.centered{
-text-align: left;
-}
 </style>
 <div id="-" class="section level2">
 <h2>Наша команда</h2>
 <div class="row">
 <div class="column-left">
-<div class="column-left">
+<div class="column-left-inside">
+<div style="width:150px; height=200px">
 <div class="figure">
 <img src="images/Irina_from_github.jpg" />
 
 </div>
 </div>
-<div class="column-right">
-<div class="centered">
-<a href="https://github.com/IrinaGoloshchapova"><strong>Ирина Голощапова</strong></a>
 </div>
+<div class="column-right-inside">
+<p><a href="https://github.com/IrinaGoloshchapova"><strong>Ирина Голощапова</strong></a></p>
 <ul>
 <li>Руководитель направления по макроэкономическому анализу X5 Retail Group<br />
 </li>
@@ -250,13 +258,15 @@ text-align: left;
 </div>
 </div>
 <div class="column-right">
-<div class="column-left">
+<div class="column-left-inside">
+<div style="margin-left:5px; width:150px; height=200px">
 <div class="figure">
 <img src="images/Mark_from_github.jpg" />
 
 </div>
 </div>
-<div class="column-right">
+</div>
+<div class="column-right-inside">
 <p><a href="https://github.com/mrk-andreev"><strong>Марк Андреев</strong></a></p>
 <ul>
 <li>Middle Data Scientist at Conundrum<br />
@@ -271,24 +281,26 @@ text-align: left;
 <h2>Поддержка проекта</h2>
 <div class="row">
 <div class="column-left">
-<div class="column-left">
+<div class="column-left-inside">
 <div class="figure">
-<img src="images/CMASF_logo_fb.jpg" />
+<img src="images/CMASF_logo_fb_cutted.jpg" />
 
 </div>
 </div>
-<div class="column-right">
+<div class="column-right-inside">
 <p><a href="https://www.forecast.ru"><strong>Центр макроэкономического анализа и краткосрочного прогнозирования</strong></a></p>
 </div>
 </div>
 <div class="column-right">
-<div class="column-left">
+<div class="column-left-inside">
+<div style="margin-left:5px; width:140px; height=190px">
 <div class="figure">
 <img src="images/MSU_logo.jpg" />
 
 </div>
 </div>
-<div class="column-right">
+</div>
+<div class="column-right-inside">
 <p><a href="https://www.msu.ru"><strong>МГУ им. М.В. Ломоносова</strong></a></p>
 </div>
 </div>
