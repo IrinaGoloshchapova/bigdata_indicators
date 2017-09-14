@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "Indicators"
       href: indicators.html
+    - text: "Methodology"
+      href: methodology.html
     - text: "Team"
       href: team.html
   right:
