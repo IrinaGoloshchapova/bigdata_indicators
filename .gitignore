@@ -2,3 +2,4 @@ docs/index.Rmd
 docs/*.Rmd
 data/
 docs/*.Rhistory
+*.Rhistory
