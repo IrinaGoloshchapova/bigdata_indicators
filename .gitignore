@@ -1,6 +1,5 @@
 docs/index.Rmd
 docs/*.Rmd
 data/
-docs/images
 docs/*.Rhistory
 *.Rhistory
