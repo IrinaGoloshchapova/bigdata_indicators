@@ -3,17 +3,13 @@ output_dir: "."
 navbar:
   title: "Big Data Indicators"
   left:
-    - text: "Home"
-      icon: fa-home
+    - icon: fa-home
       href: index.html
     - text: "Indicators"
-      icon: fa-area-chart
       href: indicators.html
     - text: "Methodology"
-      icon: fa-lightbulb-o
       href: methodology.html
     - text: "Team"
-      icon: fa-user
       href: team.html
   right:
     - icon: fa-language
