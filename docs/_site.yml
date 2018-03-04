@@ -6,7 +6,11 @@ navbar:
     - icon: fa-home
       href: index.html
     - text: "Indicators"
-      href: indicators.html
+      menu:
+        - text: "Inflation"
+          href: inflation.html
+        - text: "Crisis"
+          href: crisis.html
     - text: "Reports"
       href: reports.html
     - text: "Methodology"
@@ -17,9 +21,7 @@ navbar:
     - icon: fa-language
       menu:
         - text: "Russian"
-          href: http://bigdata-indicators.com/
-        - text: "English"
-          href: http://bigdata-indicators.com/
+          href: http://bigdata-indicators.com/      
     - icon: fa-github
       href: https://github.com/IrinaGoloshchapova/bigdata_indicators/
 
