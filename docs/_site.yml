@@ -17,6 +17,8 @@ navbar:
       href: methodology.html
     - text: "Team"
       href: team.html
+    - text: "Contacts"
+      href: contacts.html
   right:
     - icon: fa-language
       menu:
